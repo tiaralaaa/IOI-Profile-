@@ -1,0 +1,2 @@
+rootProject.name='IOI Profile List'
+include ':app'

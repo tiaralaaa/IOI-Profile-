@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IOI Profile List</string>
+    <string name="nama_member">Nama Member</string>
+    <string name="ket_member">Keterangan Member</string>
+    <string name="more">More</string>
+    <string name="favorite">Favorite</string>
+    <string name="tiara_lakita">TIARA YANIA IFANI LAKITA</string>
+    <string name="email">tiaralakita@gmail.com</string>
+    <string name="rating">Rating</string>
+    <string name="list">List</string>
+    <string name="card_view">Card View</string>
+    <string name="grid_view">Grid View</string>
+    <string name="about">About</string>
+    <string name="sumber">Source</string>
+    <string name="URL">https://kprofiles.com/ioi-members-profile/</string>
+    <string name="deskripsi">Description</string>
+    <string name="more_detail">More Detail</string>
+    <string name="image_member">imageMember</string>
+    <string name="love">love</string>
+</resources>

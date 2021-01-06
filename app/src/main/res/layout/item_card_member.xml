@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ItemRowMember">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <FrameLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/image_member"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/background_image"
+                android:contentDescription="@string/image_member"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_rating"
+                android:drawableEnd="@drawable/ic_star_black_24dp"
+                android:drawablePadding="5dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingHorizontal="8dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:text="@string/rating" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/image_layout"
+            android:gravity="center_horizontal"
+            android:textColor="@color/pink"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="@string/nama_member" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn"
+            android:layout_below="@+id/judul"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@+id/image_layout"
+            android:ellipsize="end"
+            android:justificationMode="inter_word"
+            android:maxLines="5"
+            android:textColor="@color/pink"
+            tools:ignore="UnusedAttribute"
+            tools:text="@string/ket_member" />
+
+
+        <LinearLayout
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/image_layout"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/more"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/button01"
+                android:text="@string/more"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/favorite"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/button02"
+                android:text="@string/favorite"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
